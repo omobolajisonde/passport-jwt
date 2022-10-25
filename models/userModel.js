@@ -21,15 +21,14 @@ const userSchema = new Schema({
 });
 
 userSchema.pre("save", async function (next) {
-  const hash = await bcrypt.hash(this.password, 10);
-
-  this.password = hash;
+  const hashedPassword = await bcrypt.hash(this.password, 10);
+  this.password = hashedPassword;
   next();
 });
 
-userSchema.methods.isCorrectPassword = async function (password) {
-  const compare = await bcrypt.compare(password, this.password);
-  return compare;
+userSchema.methods.isPasswordCorrect = async function (inputPassword) {
+  const isCorrect = await bcrypt.compare(inputPassword, this.password);
+  return isCorrect;
 };
 
 const User = mongoose.model("User", userSchema);
