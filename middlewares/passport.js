@@ -12,7 +12,7 @@ passport.use(
     (payload, done) => {
       try {
         console.log(payload);
-        done(null, payload.user); // req.user = payload
+        done(null, payload.user); // req.user = payload.user
       } catch (error) {
         done(error);
       }
