@@ -11,27 +11,21 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
-    "body-parser": "^1.20.1",
-    "connect-ensure-login": "^0.1.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "express-session": "^1.17.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.8",
     "passport": "^0.6.0",
-    "passport-facebook": "^3.0.0",
-    "passport-google-oidc": "^0.1.0",
-    "passport-jwt": "^4.0.0",
-    "passport-local": "^1.0.0"
+    "passport-jwt": "^4.0.0"
   },
   "devDependencies": {},
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omobolajisonde/simple-express-app.git"
+    "url": "git+https://github.com/omobolajisonde/passport-jwt.git"
   },
-  "keywords": [],
   "bugs": {
-    "url": "https://github.com/omobolajisonde/simple-express-app/issues"
+    "url": "https://github.com/omobolajisonde/passport-jwt/issues"
   },
-  "homepage": "https://github.com/omobolajisonde/simple-express-app#readme"
+  "homepage": "https://github.com/omobolajisonde/passport-jwt#readme"
 }
